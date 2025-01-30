@@ -24,23 +24,23 @@ export default function Home() {
 
   if (auth.isAuthenticated) {
     return (
-      <div>
-        <pre> Hello: {auth.user?.profile.email} </pre>
-        <pre>Name: {auth.user?.profile.name}</pre>
-        <Image
-          src="/cat-img.jpg"
-          width={500}
-          height={500}
-          alt="Picture of the author"
-        />
-        <pre> ID Token: {auth.user?.id_token} </pre>
-        <pre> Access Token: {auth.user?.access_token} </pre>
-        <pre> Refresh Token: {auth.user?.refresh_token} </pre>
-        <pre> {auth.user?.scope}</pre>
-        <button onClick={() => auth.removeUser()}>Sign out</button>
-        
-      </div>
-    );
+			<div>
+				<pre> Hello: {auth.user?.profile.email} </pre>
+				<pre>Family name: {auth.user?.profile.family_name}</pre>
+				<pre>Given name: {auth.user?.profile.given_name}</pre>
+				<Image
+					src="/cat-img.jpg"
+					width={500}
+					height={500}
+					alt="Picture of the author"
+				/>
+				<pre> ID Token: {auth.user?.id_token} </pre>
+				<pre> Access Token: {auth.user?.access_token} </pre>
+				<pre> Refresh Token: {auth.user?.refresh_token} </pre>
+				<pre> {auth.user?.scope}</pre>
+				<button onClick={() => auth.removeUser()}>Sign out</button>
+			</div>
+		);
   }
 
   return (
