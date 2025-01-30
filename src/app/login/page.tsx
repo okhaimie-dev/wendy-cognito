@@ -1,11 +1,12 @@
 "use client";
 
+import { LoginForm } from "@/components/login-form";
 import React from "react";
 
 const Login: React.FC = () => {
   return (
     <div>
-      <h2>Hello Wendy</h2>
+      <LoginForm />
     </div>
   );
 };

@@ -7,7 +7,7 @@ const cognitoAuthConfig = {
   authority:
     "https://cognito-idp.eu-central-1.amazonaws.com/eu-central-1_BqL95qCEb",
   client_id: "3qb7u5qrkk5hq11do53pt7a63q",
-  redirect_uri: "https://d84l1y8p4kdic.cloudfront.net",
+  redirect_uri: "https://wendy-cognito.vercel.app/",
   response_type: "code",
   scope: "openid",
 };
