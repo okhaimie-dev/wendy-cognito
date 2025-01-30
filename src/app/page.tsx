@@ -1,6 +1,7 @@
 "use client";
 
 import { useAuth } from "react-oidc-context";
+import Image from "next/image";
 
 export default function Home() {
   const auth = useAuth();
@@ -25,6 +26,12 @@ export default function Home() {
     return (
       <div>
                <pre> Hello: {auth.user?.profile.email} </pre>
+        <Image
+          src="/cat-img.jpg"
+          width={500}
+          height={500}
+          alt="Picture of the author"
+        />
                 <pre> ID Token: {auth.user?.id_token} </pre>
                <pre> Access Token: {auth.user?.access_token} </pre>
                 <pre> Refresh Token: {auth.user?.refresh_token} </pre>
